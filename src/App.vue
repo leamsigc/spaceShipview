@@ -1,30 +1,38 @@
+<script lang="ts">
+import { Options, Vue } from "vue-class-component";
+import HeaderNav from "@/components/Navigation/HeaderNav.vue";
+
+@Options({
+  components: { HeaderNav }
+})
+export default class App extends Vue {}
+</script>
+
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </div>
+  <HeaderNav />
   <router-view />
 </template>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+:root {
+  --font-family: Avenir, Helvetica, Arial, sans-serif;
+  --main-bg: #1a1c48;
+  --light-color: #9499c3;
+  --white: rgb(221, 221, 221);
+  --logo-font: "Oswald", sans-serif;
 }
 
-#nav {
-  padding: 30px;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+body {
+  font-family: var(--font-family);
+  text-align: center;
+  color: #2c3e50;
 }
 </style>
