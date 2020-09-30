@@ -1,5 +1,3 @@
-
-
 <script lang="ts">
 import { Options, Vue } from "vue-class-component";
 
@@ -22,6 +20,10 @@ export default class HeaderNav extends Vue {}
 <style scoped lang="scss">
 #header-nav {
   background: var(--main-bg);
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
 }
 
 .container-nav {

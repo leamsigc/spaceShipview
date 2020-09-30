@@ -1,14 +1,14 @@
 <template>
   <div class="home">
-    Home view
+    <ShipOverView />
   </div>
 </template>
 
 <script lang="ts">
 import { Options, Vue } from "vue-class-component";
-
+import ShipOverView from "@/components/Overview/shipOverview.vue";
 @Options({
-  components: {}
+  components: { ShipOverView }
 })
 export default class Overview extends Vue {}
 </script>

@@ -19,6 +19,8 @@ export default class App extends Vue {}
   --main-bg: #1a1c48;
   --light-color: #9499c3;
   --white: rgb(221, 221, 221);
+  --success: rgb(1, 109, 91);
+  --warning: rgb(204, 127, 40);
   --logo-font: "Oswald", sans-serif;
 }
 
