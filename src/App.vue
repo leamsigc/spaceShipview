@@ -17,6 +17,7 @@ export default class App extends Vue {}
 :root {
   --font-family: Avenir, Helvetica, Arial, sans-serif;
   --main-bg: #1a1c48;
+  --secondary-color: #298bfe;
   --light-color: #9499c3;
   --white: rgb(221, 221, 221);
   --success: rgb(1, 109, 91);

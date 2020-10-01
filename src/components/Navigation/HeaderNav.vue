@@ -19,7 +19,7 @@ export default class HeaderNav extends Vue {}
 
 <style scoped lang="scss">
 #header-nav {
-  background: var(--main-bg);
+  background: transparent;
   position: absolute;
   top: 0;
   right: 0;
